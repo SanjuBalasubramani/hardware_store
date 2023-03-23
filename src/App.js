@@ -5,7 +5,11 @@ import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
-import SignUp from './components/pages/SignUp';
+import Contact from './components/pages/Contact';
+// import Login from './components/Login';
+// import { Register } from './components/Register';
+
+import Account from './components/pages/Account';
 
 function App() {
   return (
@@ -16,7 +20,9 @@ function App() {
           <Route path='/' exact component={Home} />
           <Route path='/services' component={Services} />
           <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={SignUp} />
+          <Route path='/sign-up' component={Account} />
+          <Route path='/contact' component={Contact} />
+          {/* <Route path='/si' component={Register} /> */}
         </Switch>
       </Router>
     </>

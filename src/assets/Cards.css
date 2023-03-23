@@ -9,20 +9,21 @@ h1 {
 
 .cards__container {
   display: flex;
-  flex-flow: column;
+  flex-flow: column ;
   align-items: center;
   max-width: 1120px;
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
 }
 
 .cards__wrapper {
-  position: relative;
+  /* position: relative; */
   margin: 50px 0 45px;
 }
 
 .cards__items {
   margin-bottom: 24px;
+  display: flex;
 }
 
 .cards__item {
