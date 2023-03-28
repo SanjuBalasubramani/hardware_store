@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import Contact from './components/pages/Contact';
+import Ser from './components/ser';
 // import Login from './components/Login';
 // import { Register } from './components/Register';
 
@@ -22,7 +23,7 @@ function App() {
           <Route path='/products' component={Products} />
           <Route path='/sign-up' component={Account} />
           <Route path='/contact' component={Contact} />
-          {/* <Route path='/si' component={Register} /> */}
+          <Route path='/si' component={Ser} />
         </Switch>
       </Router>
     </>

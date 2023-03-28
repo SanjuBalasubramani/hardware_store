@@ -32,7 +32,10 @@ label {
 
 input {
   margin: 0.5rem 0;
-  padding: 1rem;
+  /* align-items: center; */
+  text-align: left;
+  
+  /* padding: 1rem 6rem  0rem; */
   border: none;
   border-radius: 10px;
 }
@@ -43,7 +46,7 @@ button {
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 2rem;
   color: #7439db;
 }
 

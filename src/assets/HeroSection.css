@@ -15,6 +15,7 @@ video {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 0 1000px rgba(207, 43, 43, 0.2);
+  background-color: black;
   
   object-fit: contain;
 }

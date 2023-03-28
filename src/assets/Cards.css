@@ -1,10 +1,15 @@
 .cards {
   padding: 4rem;
-  background: #fff;
+  /* background: #fff;
+   */
+   /* background-color: #242424; */
+   background-color: black;
+   
 }
 
 h1 {
   text-align: center;
+  color: white;
 }
 
 .cards__container {
@@ -14,6 +19,7 @@ h1 {
   max-width: 1120px;
   /* width: 90%; */
   margin: 0 auto;
+  
 }
 
 .cards__wrapper {
@@ -24,6 +30,7 @@ h1 {
 .cards__items {
   margin-bottom: 24px;
   display: flex;
+  /* column-count: 1; */
 }
 
 .cards__item {

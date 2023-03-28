@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+          Join to our family...
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -35,13 +35,7 @@ function Footer() {
             <Link to='/'>Investors</Link>
             <Link to='/'>Terms of Service</Link>
           </div>
-          <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
-          </div>
+          
         </div>
         <div className='footer-link-wrapper'>
           
@@ -58,11 +52,11 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
+              VETRI VINAYAGA
               <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          {/* <small class='website-rights'> © 2020</small> */}
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
@@ -88,22 +82,8 @@ function Footer() {
             >
               <i class='fab fa-youtube' />
             </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin' />
-            </Link>
+           
+           
           </div>
         </div>
       </section>

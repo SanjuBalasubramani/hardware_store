@@ -65,11 +65,11 @@ const Contact = () => {
               <div className="contact-map">
                 
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.215562830083!2d77.6041611!3d11.171669200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba90b52e0ca5e25%3A0xa14014c6806f931!2sVetri%20Vinayaka%20Wood%20Works!5e0!3m2!1sen!2sin!4v1679581807853!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.215562830083!2d77.6041611!3d11.171669200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba90b52e0ca5e25%3A0xa14014c6806f931!2sVetri%20VINAYAGA%20Wood%20Works!5e0!3m2!1sen!2sin!4v1679581807853!5m2!1sen!2sin"
                   width="600"
                   height="450"
                   style={{border:0}}
-                  title="Vetri Vinayaka"
+                  title="Vetri VINAYAGA"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"

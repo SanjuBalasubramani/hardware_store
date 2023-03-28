@@ -1,6 +1,12 @@
 import React from 'react';
 import '../../App.css';
-
+import Gallery from'../Gallery';
 export default function Products() {
-  return <h1 className='products'>PRODUCTS</h1>;
+  return(
+    <>
+    {/* <Productlist></Productlist>
+     */}
+     <Gallery></Gallery>
+    </>
+  )
 }
