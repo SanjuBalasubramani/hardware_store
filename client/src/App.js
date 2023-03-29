@@ -9,7 +9,7 @@ import Contact from './components/pages/Contact';
 import Ser from './components/ser';
 // import Login from './components/Login';
 // import { Register } from './components/Register';
-
+import About from './components/About';
 import Account from './components/pages/Account';
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
           <Route path='/sign-up' component={Account} />
           <Route path='/contact' component={Contact} />
           <Route path='/si' component={Ser} />
+          <Route path='/about' component={About}/>
         </Switch>
       </Router>
     </>
