@@ -10,8 +10,10 @@
     padding-top: 12rem;
     margin-top: -5rem;
     padding-bottom: 2 rem;
-    /* background-image: url('/images/img-10.jpg'); */
-    background-color: #111;
+     /* background-image: url('/images/img-2.jpg'); */
+   
+    background-color: #111; 
+   
   }
   
   .contact-heading {
@@ -72,9 +74,9 @@
     margin-bottom: 40px;
   }
   .icon {
-    height: 60px;
-    width: 60px;
-    background: #fff;
+    height: 100px;
+    width: 100px;
+    /* background: #fff; */
     border-radius: 50%;
     line-height: 60px;
     text-align: center;

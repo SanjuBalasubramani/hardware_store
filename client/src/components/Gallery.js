@@ -31,11 +31,12 @@ const Gallery=()=> {
         <li className={`buttons ${activeFilter === 'paints' ? 'active' : ''}`} data-filter="paints" onClick={handleFilterClick}>Paints</li>
         <li className={`buttons ${activeFilter === 'light' ? 'active' : ''}`} data-filter="light" onClick={handleFilterClick}>Light</li>
         <li className={`buttons ${activeFilter === 'cables' ? 'active' : ''}`} data-filter="cables" onClick={handleFilterClick}>Cables</li>
-        {/* <li className={`buttons ${activeFilter === 'juice' ? 'active' : ''}`} data-filter="juice" onClick={handleFilterClick}>juice</li> */}
-        {/* <li className={`buttons ${activeFilter === 'sandwich' ? 'active' : ''}`} data-filter="sandwich" onClick={handleFilterClick}>sandwich</li> */}
+        <li className={`buttons ${activeFilter === 'machinery' ? 'active' : ''}`} data-filter="machinery" onClick={handleFilterClick}>Machinery</li>
+        <li className={`buttons ${activeFilter === 'pipes' ? 'active' : ''}`} data-filter="pipes" onClick={handleFilterClick}>pipes</li>
       </ul>
 
       <div className="image-container">
+     
         <a href="../images/Products/nippon.jpg" className="image paints">
           <img src="../images/Products/nippon.jpg"   alt=""/>
           <span className='label'>Nippon Paint</span>
@@ -48,12 +49,30 @@ const Gallery=()=> {
           <img src="../images/Products/finolex.jpg" alt=""/>
           <span className='label'>Finolex Wires</span>
         </a>
-
+           {/* .................. */}
+           <a href="../images/Products/drill.jpeg" className="image machinery">
+          <img src="../images/Products/drill.jpeg" alt=""/>
+          <span className='label'>drill</span>
+        </a>
        
+        {/* ........................ */}
+        <a href="../images/Products/ashirvad.jpeg" className="image pipes">
+          <img src="../images/Products/ashirvad.jpeg" alt=""/>
+          <span className='label'>ashirvad</span>
+        </a>
+        <a href="../images/Products/arungold.jpeg" className="image pipes">
+          <img src="../images/Products/arungold.jpeg" alt=""/>
+          <span className='label'>arungold</span>
+        </a>
+        <a href="../images/Products/dulux.png" className="image paints">
+          <img src="../images/Products/dulux.png"   alt=""/>
+          <span className='label'>dulux Paint</span>
+        </a>
         <a href="../images/Products/fybros.jpg" className="image cables">
           <img src="../images/Products/fybros.jpg" alt=""/>
           <span className='label'>Fybros Cables</span>
         </a>
+
         <a href="../images/Products/philips.jpg" className="image light">
           <img src="../images/Products/Philips.jpg" alt=""/>
           <span className='label'>Philips light</span>
@@ -63,6 +82,15 @@ const Gallery=()=> {
           <img src="../images/Products/havells.png" alt=""/>
           <span className='label'>havells Cables</span>
         </a>
+        <a href="../images/Products/bajaj.jpeg" className="image light">
+          <img src="../images/Products/bajaj.jpeg" alt=""/>
+          <span className='label'>bajaj light</span>
+        </a>
+        <a href="../images/Products/crompton.jpeg" className="image light">
+          <img src="../images/Products/crompton.jpeg" alt=""/>
+          <span className='label'>crompton light</span>
+        </a>
+
         
         </div>
         </div>

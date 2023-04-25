@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
@@ -11,10 +12,12 @@ import Ser from './components/ser';
 // import { Register } from './components/Register';
 import About from './components/About';
 import Account from './components/pages/Account';
+// import Layout from './components/layout';
 
 function App() {
   return (
     <>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />;
       <Router>
         <Navbar />
         <Switch>
@@ -24,6 +27,8 @@ function App() {
           <Route path='/sign-up' component={Account} />
           <Route path='/contact' component={Contact} />
           <Route path='/si' component={Ser} />
+          
+          {/* <Route path='/Layout' component={Layout}/> */}
           <Route path='/about' component={About}/>
         </Switch>
       </Router>

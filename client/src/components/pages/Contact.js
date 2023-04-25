@@ -13,7 +13,9 @@ const Contact = () => {
               <div className="contact-widget">
                 <div className="contact-widget-item">
                   <div className="icon">
-                    <i class="fa-solid fa-location-dot"></i>
+                  <span class="material-symbols-outlined">
+home
+</span>
                   </div>
                   <div className="text">
                     <h5>Address</h5>
@@ -28,7 +30,9 @@ const Contact = () => {
 
                 <div className="contact-widget-item">
                   <div className="icon">
-                    <i class="fa-solid fa-phone"></i>
+                  <span class="material-symbols-outlined">
+phone_iphone
+</span>
                   </div>
                   <div className="text">
                     <h5>Contact Us</h5>
@@ -38,7 +42,9 @@ const Contact = () => {
 
                 <div className="contact-widget-item">
                   <div className="icon">
-                    <i class="fa-regular fa-envelope"></i>
+                  <span class="material-symbols-outlined">
+mail
+</span>
                   </div>
                   <div className="text mail-text">
                     <h5>Mail</h5>

@@ -1,6 +1,7 @@
 import React from "react";
 import "../assets/About.css";
-import Img8 from "../images/img-1.jpg";
+import Img8 from "../images/img-2.jpg";
+import Footer from "./Footer";
 const About = () => {
   return (
     <>
@@ -41,6 +42,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };
