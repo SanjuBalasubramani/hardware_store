@@ -9,7 +9,7 @@
 }
 .aboutSection {
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   background-color: black;
 }
 .aboutContainer {
@@ -25,8 +25,8 @@
 .aboutImage-section {
   padding-top: 30px;
   float: right;
-  width: 40%;
-  height: 40%;
+  width: 30%;
+  height: 30%;
 }
 .aboutImage-section img {
   width: 100%;

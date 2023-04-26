@@ -50,6 +50,7 @@ function Serive ()  {
                             </div>
                          </div>
                     </div>
+                    
 
                     <div className="col__3">
                          <div className="service__box pointer">

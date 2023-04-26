@@ -53,7 +53,7 @@
   /* margin-top: 30rem; */
   font-size: 1.7rem;
   /* margin-left: 5rem; */
-  text-transform: uppercase;
+  text-transform:capitalize;
   color: white;
 
   /* font-family: 'Courier New', Courier, monospace; */

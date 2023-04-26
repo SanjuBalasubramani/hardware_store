@@ -36,7 +36,10 @@ const Gallery=()=> {
       </ul>
 
       <div className="image-container">
-     
+      <a href="../images/Products/laer.jpg" className="image machinery">
+          <img src="../images/Products/laser.jpg" alt=""/>
+          <span className='label'> laser</span>
+        </a>
         <a href="../images/Products/nippon.jpg" className="image paints">
           <img src="../images/Products/nippon.jpg"   alt=""/>
           <span className='label'>Nippon Paint</span>
@@ -50,9 +53,13 @@ const Gallery=()=> {
           <span className='label'>Finolex Wires</span>
         </a>
            {/* .................. */}
-           <a href="../images/Products/drill.jpeg" className="image machinery">
-          <img src="../images/Products/drill.jpeg" alt=""/>
-          <span className='label'>drill</span>
+           <a href="../images/Products/drill.jpg" className="image machinery">
+          <img src="../images/Products/drill.jpg" alt=""/>
+          <span className='label'> Bosch drill</span>
+        </a>
+        <a href="../images/Products/cutter.jpeg" className="image machinery">
+          <img src="../images/Products/cutter.jpeg" alt=""/>
+          <span className='label'> Bosch Cutter</span>
         </a>
        
         {/* ........................ */}
