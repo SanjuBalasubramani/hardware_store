@@ -1,13 +1,13 @@
 import React from "react";
-import Login from "../Login";
+import Signup from "../Signup";
 
 import '../../assets/Account.css';
-const Account = () => {
+const Create = () => {
    
   return (<>
   <div className="Account">
-    <Login/>
+    <Signup/>
        </div>
   </>);
 };
-export default Account;
+export default Create;

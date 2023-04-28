@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 
 function Login() {
   const history = useNavigate();
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -13,15 +12,15 @@ function Login() {
 
     try {
       await axios
-        .post("http://localhost:8000/", {
+        .post("http://localhost:8000/signup", {
           email,
           password,
         })
         .then((res) => {
-          if ((res.data === "exist")) {
+          if (res.data === "exist") {
+            alert("User already exists");
+          } else if (res.data === "notexist") {
             history("/home", { state: { id: email } });
-          } else if ((res.data === "notexist")) {
-            alert("User have not sign up");
           }
         })
         .catch((e) => {
@@ -35,7 +34,7 @@ function Login() {
 
   return (
     <div className="login">
-      <h1>Login</h1>
+      <h1>Signup</h1>
 
       <form action="POST">
         <input
@@ -63,7 +62,7 @@ function Login() {
       <p>OR</p>
       <br />
 
-      <Link to="/signup">Signup Page</Link>
+      <Link to="/">Login Page</Link>
     </div>
   );
 }
