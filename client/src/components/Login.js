@@ -13,13 +13,13 @@ function Login() {
 
     try {
       await axios
-        .post("http://localhost:8000/", {
+        .post("http://localhost:8000/login", {
           email,
           password,
         })
         .then((res) => {
           if ((res.data === "exist")) {
-            history("/home", { state: { id: email } });
+            history("/", { state: { id: email } });
           } else if ((res.data === "notexist")) {
             alert("User have not sign up");
           }
