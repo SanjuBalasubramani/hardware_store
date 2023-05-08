@@ -58,8 +58,15 @@ function Login() {
       await axios.post("http://localhost:8000/signup", {
         email,
         password,
-      });
-      history("/", { state: { id: email } });
+      })
+      .then((res) => {
+        if ((res.data === "exist")) {
+          // history("/", { state: { id: email } });
+          alert ("user already exist");
+        } 
+      })
+      // history("/", { state: { id: email } });
+      
     } catch (e) {
       alert("Something went wrong");
       console.log(e);
