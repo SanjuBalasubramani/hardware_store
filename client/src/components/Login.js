@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
-
+import "../assets/Account.css";
 function Login() {
   const history = useNavigate();
 
@@ -56,7 +56,7 @@ function Login() {
           name=""
           id=""
         />
-        <input type="submit" onClick={submit} />
+        <input className="submit" type="submit" onClick={submit} />
       </form>
 
       <br />
