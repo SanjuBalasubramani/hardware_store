@@ -1,6 +1,33 @@
 import "../../assets/Contact.css";
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+// import styled from "styled-components";
+
+
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_3pezzbr",
+        "template_g6r04rh",
+        form.current,
+        "IHU2jVzS1keHbRmNt"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <fragment>
       <section className="contact">
@@ -55,11 +82,11 @@ mail
             </div>
             <div className="column">
               <div className="contact-form">
-                <form action="#">
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email" />
-                  <textarea placeholder="Comment"></textarea>
-                  <button type="submit" className="site-btn">
+              <form ref={form} onSubmit={sendEmail}>
+                  <input type="text" placeholder="Name" name="user_name" />
+                  <input type="email" placeholder="Email" name="user_email" />
+                  <textarea placeholder="Comment" name="message"></textarea>
+                  <button type="submit"  value="Send" className="site-btn">
                     Send Message
                   </button>
                 </form>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
-import '../assets/Account.css';
+import "../assets/Account.css";
 function Login() {
   const history = useNavigate();
   const [email, setEmail] = useState("");
@@ -55,18 +55,19 @@ function Login() {
     }
 
     try {
-      await axios.post("http://localhost:8000/signup", {
-        email,
-        password,
-      })
-      .then((res) => {
-        if ((res.data === "exist")) {
-          // history("/", { state: { id: email } });
-          alert ("user already exist");
-        } 
-      })
-      // history("/", { state: { id: email } });
-      
+      await axios
+        .post("http://localhost:8000/signup", {
+          email,
+          password,
+        })
+        .then((res) => {
+          if (res.data === "exist") {
+            alert("user already exist");
+          }
+          else{
+            history("/", { state: { id: email } });
+          }
+        });
     } catch (e) {
       alert("Something went wrong");
       console.log(e);
@@ -75,7 +76,6 @@ function Login() {
 
   return (
     <div className="login">
-      
       <h1>Signup</h1>
 
       <form onSubmit={handleSubmit}>
@@ -97,7 +97,7 @@ function Login() {
           id=""
         />
         {passwordError && <span className="error">{passwordError}</span>}
-        <input  className="submit "type="submit" value="Sign up" />
+        <input className="submit " type="submit" value="Sign up" />
       </form>
 
       <br />
