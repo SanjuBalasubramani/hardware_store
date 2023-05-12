@@ -32,7 +32,7 @@ app.post("/signup", async (req, res) => {
     email: email,
     password: password,
   };
-
+console.log("Data : ",data)
   try {
     const check = await collection.findOne({ email: email });
 
