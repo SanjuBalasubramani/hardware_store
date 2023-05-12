@@ -27,6 +27,10 @@
     border: 1px solid white;
     border-radius: 10px;
     margin: 0.5rem;
+
+  }
+  .login{
+    width:50%;
   }
 }
 
@@ -34,6 +38,7 @@ label {
   text-align: left;
   padding: 0.25rem 0;
 }
+
 
 input {
   margin: 0.5rem 0;
