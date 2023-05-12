@@ -6,7 +6,8 @@
   justify-content: center;
   color: white;
 
-  background-color: black;
+  /* background-color: black; */
+  background: url('/images/img-10.jpg') center center/cover no-repeat;
   font-family: "PT Sans", sans-serif;
 }
 .login {
