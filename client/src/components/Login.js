@@ -13,7 +13,7 @@ function Login() {
 
     try {
       await axios
-        .post("http://localhost:3000/login", {
+        .post("https://vertivinayaga.onrender.com/login", {
           email,
           password,
         })
