@@ -1,6 +1,7 @@
 const express = require("express");
 const collection = require("./mongo");
 const cors = require("cors");
+const { emailHandle } = require("./emailHandler");
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -45,6 +46,8 @@ app.post("/signup", async (req, res) => {
     res.json("notexist");
   }
 });
+
+app.post("/send/email/contact",emailHandle)
 
 app.listen(8000, () => {
   console.log("port connected");

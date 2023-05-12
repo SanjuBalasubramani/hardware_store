@@ -1,8 +1,57 @@
 import "../../assets/Contact.css";
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const Contact = () => {
+  const [name,setName] = useState("")
+  const [email,setEmail] = useState("")
+
+  const [comment,setComment] = useState("")
+const navigate = useNavigate()
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+
+const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+  const handleCommentChange = (event) => {
+    setComment(event.target.value);
+  };
+
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      name: name,
+      email: email,
+    
+      comment: comment,
+    };
+    console.log("Data ", data);
+    try {
+      const res = await axios.post("http://localhost:8000/send/email/contact",data);
+      if (res.data.status === "success") {
+        // console.log("Inside Successs");
+        alert(
+          res.data.message +
+            " to the store. Reply mail will be sent soon to you from store"
+        );
+        navigate("/");
+      } else {
+        if (res.data.status === "failed") {
+          // console.log("Inside Successs");
+          alert(res.data.message + " to store. ");
+        }
+      }
+    } catch (e) {
+      alert(e);
+    }
+  };
+  
+
   return (
-    <fragment>
+    <fragment> 
       <section className="contact">
         <div className="contact-heading">
           <h2>Contact Us</h2>
@@ -56,10 +105,10 @@ mail
             <div className="column">
               <div className="contact-form">
                 <form action="#">
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email" />
-                  <textarea placeholder="Comment"></textarea>
-                  <button type="submit" className="site-btn">
+                  <input type="text" placeholder="Name" value={name} onChange={handleNameChange}/>
+                  <input type="email" placeholder="Email" value={email} onChange={handleEmailChange} />
+                  <textarea placeholder="Comment" value={comment} onChange={handleCommentChange}></textarea>
+                  <button type="submit" className="site-btn" onClick={handleSubmit}>
                     Send Message
                   </button>
                 </form>
