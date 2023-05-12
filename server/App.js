@@ -49,6 +49,6 @@ app.post("/signup", async (req, res) => {
 
 app.post("/send/email/contact",emailHandle)
 
-app.listen(8000, () => {
+app.listen(3000, () => {
   console.log("port connected");
 });

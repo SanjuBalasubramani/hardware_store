@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose
-  .connect("mongodb://localhost:27017/hardware")
+  .connect("mongodb+srv://sanjubalasubramani:VJlj615odrYOCSmB@cluster0.cx520dk.mongodb.net/vetrivinayaga?retryWrites=true&w=majority")
   .then(() => {
     console.log("mongodb connected");
   })
