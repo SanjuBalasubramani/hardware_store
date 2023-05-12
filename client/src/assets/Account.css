@@ -11,7 +11,7 @@
   font-family: "PT Sans", sans-serif;
 }
 .login {
-  width: 50%;
+  width: 65%;
 }
 
 .auth-form-container,
@@ -30,7 +30,7 @@
 
   }
   .login{
-    width:50%;
+    width:30%;
   }
 }
 
